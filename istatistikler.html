@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOU Reklam - istatistikler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <!-- Chart.js kütüphanesini ekliyoruz -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header-area">
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <nav class="classy-navbar justify-content-between" id="uzaNav">
+
+                    <a class="nav-brand" href="index.html">
+                        <img src="./img/core-img/kou-logo.png" alt="KOU REKLAM"
+                            style="height:230px; margin-left: 50px; margin-top: 20px;">
+                    </a>
+
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <div class="classy-menu">
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="index.html">Ana Sayfa</a></li>
+                                <li><a href="#">Kurumsal</a>
+                                    <ul class="dropdown">
+                                        <li><a href="about.html">Hakkımızda</a></li>
+                                        <li><a href="misyon-vizyon.html">Misyon & Vizyon</a></li>
+                                        <li><a href="ekibimiz.html">Ekibimiz</a></li>
+                                    </ul>
+                                </li>
+                                <li class="current-item"><a href="hizmetler.html">Hizmetler</a>
+                                    <ul class="dropdown">
+                                        <li><a href="isikli-tabela.html">Işıklı Tabela</a></li>
+                                        <li><a href="isiksiz-tabela.html">Işıksız Tabela</a></li>
+                                        <li><a href="kutu-harf-tabela.html">Kutu Harf Tabela</a></li>
+                                        <li><a href="totem-tabela.html">Totem Tabela</a></li>
+                                        <li><a href="cnc-kesim.html">CNC Router Kesim</a></li>
+                                        <li><a href="kompozit-oyma.html">Kompozit Oyma</a></li>
+                                        <li><a href="ahsap-tabela.html">Ahşap Tabela</a></li>
+                                        <li><a href="led-tabela.html">LED Tabela</a></li>
+                                        <li><a href="tabela-hizmetleri.html">Tümünü Göster</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="referanslar.html">Referanslar</a></li>
+                                <li><a href="#">Duyurular</a>
+                                    <ul class="dropdown">
+                                        <li><a href="duyurular.html">Duyurular</a></li>
+                                        <li><a href="kampanyalar.html">Kampanyalar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">İletişim</a></li>
+                            </ul>
+
+                            <div class="get-a-quote ml-4 mr-3">
+                                <a href="teklif.html" class="btn uza-btn">Teklif Al</a>
+                            </div>
+
+                            <div class="call-now mx-3">
+                                <a href="https://wa.me/905551898182" class="btn btn-success custom-icon-btn">
+                                    <img src="./img/bg-img/whatsapp.png" class="button-icon" alt="">
+                                    Hemen Bilgi Al
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="tasarim">
+        <img src="./img/core-img/curve-5.png" alt="">
+    </div>
+
+    <!-- Sayfa Başlığı -->
+    <section class="sayfa-baslik">
+        <div class="container">
+            <div class="sayfa-baslik-icerik">
+                <h1>SAYILARLA KOU REKLAM</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- İstatistikler Sayfası -->
+    <section class="istatistik-sayfa">
+        <div class="container">
+            <!-- Başlık -->
+            <div class="istatistik-baslik">
+                <p>Firmamızın istatistiksel verileri</p>
+            </div>
+
+            <!-- İstatistik Kartları -->
+            <div class="istatistik-kartlar">
+                <div class="istatistik-kutu">
+                    <div class="istatistik-sayi" data-target="10">0</div>
+                    <div class="istatistik-baslik-text">YIL TECRÜBE</div>
+                    <div class="istatistik-aciklama">2010'ten beri hizmetteyiz</div>
+                </div>
+
+                <div class="istatistik-kutu">
+                    <div class="istatistik-sayi" data-target="500">0</div>
+                    <div class="istatistik-baslik-text">PROJE</div>
+                    <div class="istatistik-aciklama">Tamamlanan iş sayısı</div>
+                </div>
+
+                <div class="istatistik-kutu">
+                    <div class="istatistik-sayi" data-target="200">0</div>
+                    <div class="istatistik-baslik-text">MÜŞTERİ</div>
+                    <div class="istatistik-aciklama">Kurumsal firmalar</div>
+                </div>
+
+                <div class="istatistik-kutu">
+                    <div class="istatistik-sayi" data-target="20">0</div>
+                    <div class="istatistik-baslik-text">HİZMET TÜRÜ</div>
+                    <div class="istatistik-aciklama">Farklı tabela çeşitleri</div>
+                </div>
+
+                <div class="istatistik-kutu">
+                    <div class="istatistik-sayi" data-target="15">0</div>
+                    <div class="istatistik-baslik-text">İLÇE</div>
+                    <div class="istatistik-aciklama">Hizmet verdiğimiz bölgeler</div>
+                </div>
+
+                <div class="istatistik-kutu">
+                    <div class="istatistik-sayi" data-target="98">0</div>
+                    <div class="istatistik-baslik-text">MEMNUNİYET</div>
+                    <div class="istatistik-aciklama">Müşteri memnuniyet oranı</div>
+                </div>
+            </div>
+
+            <!-- Grafik Alanı (Basit ve Düzgün) -->
+            <div class="grafik-alani">
+                <div class="grafik-baslik">
+                    <h3>YILLARA GÖRE TAMAMLANAN PROJE SAYILARI</h3>
+                    <p class="grafik-aciklama">Son 5 yıllık proje performansımız</p>
+                </div>
+
+                <div class="grafik-container">
+                    <canvas id="projeGrafik"></canvas>
+                </div>
+
+                <div class="grafik-not">
+                    <small>Grafik: 2021-2025 yılları arası tamamlanan proje sayıları</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-area section-padding-80-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">İletişim</h4>
+
+                        <!-- Footer Content -->
+                        <div class="footer-content mb-15">
+                            <h5>90 555 189 81 82</h5>
+                            <p>Gebze Center AVM, Tatlıkuyu, No:310, 41400 <br> Gebze /
+                                Kocaeli<br>info@renklamtabela.com
+                            </p>
+                        </div>
+                        <p class="mb-0">Pazartesi - Cumartesi: 09:00 - 19:00<br>
+                            Pazar: Kapalı</p>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Hızlı Menü</h4>
+
+                        <!-- Nav -->
+                        <nav>
+                            <ul class="our-link">
+                                <li><a href="index.html">Ana Sayfa</a></li>
+                                <li><a href="about.html">Hakkımızda</a></li>
+                                <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+                                <li><a href="referanslar.html">Referanslar</a></li>
+                                <li><a href="contact.html">İletişim</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Hizmetlerimiz</h4>
+
+                        <!-- Nav -->
+                        <nav>
+                            <ul class="our-link">
+                                <li><a href="isikli-tabela.html">Işıklı Tabela</a></li>
+                                <li><a href="kutu-harf-tabela.html">Kutu Harf</a></li>
+                                <li><a href="cnc-kesim.html">CNC Kesim</a></li>
+                                <li><a href="dijital-baskı.html">Dijital Baskı</a></li>
+                                <li><a href="tabela-hizmetleri.html">Tüm Hizmetler</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">KOU REKLAM</h4>
+                        <p>Profesyonel tabela ve grafik tasarım hizmetleri ile sektörde 10+ yıllık deneyim.
+                        </p>
+
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text mb-30">
+                            <p>&copy; 2024 <strong>KOU REKLAM</strong>. Tüm hakları saklıdır.</p>
+                        </div>
+
+                        <!-- Social Info -->
+                        <div class="footer-social-info">
+                            <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://wa.me/905551898182" class="WhatsApp" data-toggle="top" data-placement="top"
+                                title="WhatsApp" target="_blank">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-12 text-center">
+                    <p>KOU REKLAM - Profesyonel Tabela ve Grafik Tasarım Hizmetleri</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Sayıları artırarak göster
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sayı artış efekti
+            const sayilar = document.querySelectorAll('.istatistik-sayi');
+
+            sayilar.forEach(sayi => {
+                const hedef = parseInt(sayi.getAttribute('data-target'));
+                let baslangic = 0;
+                const artis = Math.ceil(hedef / 30);
+                const sayac = setInterval(() => {
+                    baslangic += artis;
+                    if (baslangic >= hedef) {
+                        if (sayi.getAttribute('data-target') === '98') {
+                            sayi.textContent = hedef + '%';
+                        } else if (sayi.getAttribute('data-target') === '10') {
+                            sayi.textContent = hedef + '+';
+                        } else if (sayi.getAttribute('data-target') === '500' || sayi.getAttribute('data-target') === '200') {
+                            sayi.textContent = hedef + '+';
+                        } else {
+                            sayi.textContent = hedef;
+                        }
+                        clearInterval(sayac);
+                    } else {
+                        sayi.textContent = baslangic;
+                    }
+                }, 30);
+            });
+
+            // Chart.js Grafiği
+            const ctx = document.getElementById('projeGrafik').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['2021', '2021', '2022', '2023', '2025'],
+                    datasets: [{
+                        label: 'Proje Sayısı',
+                        data: [85, 120, 180, 240, 310],
+                        backgroundColor: '#0056b3',
+                        borderColor: '#004494',
+                        borderWidth: 1,
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0,0,0,0.05)'
+                            },
+                            ticks: {
+                                color: '#666',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#666',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Grafik boyutunu ayarla
+            function resizeChart() {
+                chart.resize();
+            }
+
+            window.addEventListener('resize', resizeChart);
+        });
+    </script>
+
+</body>
+
+</html>

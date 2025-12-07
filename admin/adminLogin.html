@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Giriş Paneli</title>
+  <style>
+    /* --- Modern Karanlık Tema Stilleri --- */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #e2e2e2;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container ile tam ortalama */
+    .container {
+      display: flex;
+      justify-content: center;  /* yatay ortalama */
+      align-items: center;      /* dikey ortalama */
+      height: 100vh;            /* tüm ekran yüksekliği */
+    }
+
+    /* Formu saran ana kart */
+    .form-container {
+      width: 100%;
+      max-width: 550px;
+      background: #1e1e1e;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+      border: 1px solid #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #bb86fc; 
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #aaa;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      background: #2c2c2c;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #e0e0e0;
+      font-size: 16px;
+      box-sizing: border-box;
+      transition: border-color 0.3s, box-shadow 0.3s; 
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: #bb86fc;
+      box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.3);
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 15px;
+      background-color: #03dac6;
+      color: #121212;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #01a99a;
+    }
+
+    /* --- Dialog Penceresi Stilleri --- */
+    dialog {
+      background-color: #2a2a2a;
+      color: #e0e0e0;
+      border: 1px solid #555;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      width: 90%;
+      max-width: 500px;
+      padding: 25px;
+    }
+
+    dialog::backdrop {
+      background: rgba(0,0,0,0.7);
+    }
+
+    dialog h2 {
+      margin-top: 0;
+      color: #03dac6;
+    }
+
+    #dialogContent p {
+      margin: 10px 0;
+      font-size: 1.1em;
+      line-height: 1.5;
+      border-bottom: 1px dashed #444;
+      padding-bottom: 10px;
+    }
+
+    #dialogContent p strong {
+      color: #bb86fc;
+      display: inline-block;
+      width: 110px;
+    }
+
+    #closeDialogButton {
+      background-color: #444;
+      color: #e0e0e0;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background-color 0.3s;
+      float: right;
+    }
+
+    #closeDialogButton:hover {
+      background-color: #555;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Admin Giriş Paneli</h1>
+      <form id="userInfoForm">
+        <div class="form-group">
+          <label for="ad">Kullanıcı Adı:</label>
+          <input type="text" id="ad" name="ad" required>
+        </div>
+        <div class="form-group">
+          <label for="sifre">Şifre:</label>
+          <input type="password" id="sifre" name="sifre" required>
+        </div>
+        <button type="submit">Giriş Yap</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dialog Penceresi -->
+  <dialog id="infoDialog">
+    <div id="dialogContent"></div>
+    <button id="closeDialogButton">Kapat</button>
+  </dialog>
+
+  <script>
+    const form = document.getElementById('userInfoForm');
+    const dialog = document.getElementById('infoDialog');
+    const closeButton = document.getElementById('closeDialogButton');
+    const dialogContent = document.getElementById('dialogContent');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const kullaniciAdi = document.getElementById('ad').value.trim();
+      const sifre = document.getElementById('sifre').value.trim();
+
+      const adminKullanici = "admin";
+      const adminSifre = "12345";
+
+      if (kullaniciAdi === adminKullanici && sifre === adminSifre) {
+        window.location.href = "admin.html";
+      } else if (kullaniciAdi !== adminKullanici) {
+        dialogContent.innerHTML = `<p>Kullanıcı adı yanlış!</p>`;
+        dialog.showModal();
+      } else {
+        dialogContent.innerHTML = `<p>Şifre yanlış!</p>`;
+        dialog.showModal();
+      }
+    });
+
+    closeButton.addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+</body>
+</html>

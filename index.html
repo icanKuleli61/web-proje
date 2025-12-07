@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="KOU REKLAM - Profesyonel Tabela ve Grafik Tasarım Hizmetleri">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>KOU REKLAM - Tabela ve Grafik Tasarım</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.ico">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Slider Custom CSS -->
+    <style>
+        /* Slider Stilleri */
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 30px 0;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-slide:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .service-card h5 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            min-height: 60px;
+        }
+
+        .service-btn {
+            background: #ff084e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .service-btn:hover {
+            background: #d8003d;
+            transform: scale(1.05);
+        }
+
+        /* Portfolio güncellemeleri */
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        /* Duyurular stili */
+        .duyuru-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ff084e;
+        }
+
+        .duyuru-tarih {
+            color: #ff084e;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* İletişim formu */
+        .iletisim-formu {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .iletisim-formu input,
+        .iletisim-formu textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .iletisim-formu button {
+            background: #ff084e;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .iletisim-bilgileri {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .iletisim-bilgileri i {
+            color: #ff084e;
+            margin-right: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="wrapper">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="uzaNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="index.html">
+                        <img src="./img/core-img/kou-logo.png" alt="KOU REKLAM"
+                            style="height:230px; margin-left: 50px; margin-top: 20px;">
+                    </a>
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li class="current-item"><a href="index.html">Ana Sayfa</a></li>
+
+                                <li><a href="#">Kurumsal</a>
+                                    <ul class="dropdown">
+                                        <li><a href="about.html">Hakkımızda</a></li>
+                                        <li><a href="misyon-vizyon.html">Misyon & Vizyon</a></li>
+                                        <li><a href="ekibimiz.html">Ekibimiz</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="hizmetler.html">Hizmetler</a>
+                                    <ul class="dropdown">
+                                        <li><a href="isikli-tabela.html">Işıklı Tabela</a></li>
+                                        <li><a href="isiksiz-tabela.html">Işıksız Tabela</a></li>
+                                        <li><a href="kutu-harf-tabela.html">Kutu Harf Tabela</a></li>
+                                        <li><a href="totem-tabela.html">Totem Tabela</a></li>
+                                        <li><a href="cnc-kesim.html">CNC Router Kesim</a></li>
+                                        <li><a href="kompozit-oyma.html">Kompozit Oyma</a></li>
+                                        <li><a href="ahsap-tabela.html">Ahşap Tabela</a></li>
+                                        <li><a href="led-tabela.html">LED Tabela</a></li>
+                                        <li><a href="tabela-hizmetleri.html">Tümünü Göster</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="referanslar.html">Referanslar</a></li>
+
+                                <li><a href="#">Duyurular</a>
+                                    <ul class="dropdown">
+                                        <li><a href="duyurular.html">Duyurular</a></li>
+                                        <li><a href="kampanyalar.html">Kampanyalar</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="contact.html">İletişim</a></li>
+
+                            </ul>
+                            <div class="get-a-quote ml-4 mr-3">
+                                <a href="teklif.html" class="btn uza-btn">Teklif Al</a>
+                            </div>
+
+                            <div class="call-now mx-3">
+                                <a href="https://wa.me/905551898182" class="btn btn-success custom-icon-btn">
+                                    <img src="./img/bg-img/whatsapp.png" class="button-icon" alt="">
+                                    Hemen Bilgi Al
+                                </a>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide">
+                <!-- Background Curve -->
+                <div class="background-curve">
+                    <img src="./img/core-img/curve-1.png" alt="">
+                </div>
+
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-md-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">KOU REKLAM <br>
+                                        <span>Profesyonel Tabela & Grafik Tasarım</span>
+                                    </h2>
+                                    <h5 data-animation="fadeInUp" data-delay="400ms">Işıklı/Işıksız Tabela, Kutu Harf,
+                                        CNC Kesim ve Özel Grafik Tasarım Hizmetleri</h5>
+                                    <a href="contact.html" class="btn uza-btn btn-2" data-animation="fadeInUp"
+                                        data-delay="700ms">Hemen Teklif Al</a>
+                                </div>
+                            </div>
+                            <!-- Welcome Thumbnail -->
+                            <div class="col-12 col-md-6">
+                                <div class="welcome-thumbnail">
+                                    <img src="./img/bg-img/giris-örnek.png" alt="Örnek tasarım"
+                                        data-animation="slideInRight" data-delay="400ms">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide">
+                <!-- Background Curve -->
+                <div class="background-curve">
+                    <img src="./img/core-img/curve-1.png" alt="">
+                </div>
+
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-md-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">10+ Yıllık <br>
+                                        <span>Tecrübe ve Kalite</span>
+                                    </h2>
+                                    <h5 data-animation="fadeInUp" data-delay="400ms">Uzun yıllara dayanan deneyimimizle
+                                        en kaliteli tabela ve grafik tasarım çözümleri</h5>
+                                    <a href="referanslar.html" class="btn uza-btn btn-2" data-animation="fadeInUp"
+                                        data-delay="700ms">Referanslarımız</a>
+                                </div>
+                            </div>
+                            <!-- Welcome Thumbnail -->
+                            <div class="col-12 col-md-6">
+                                <div class="welcome-thumbnail">
+                                    <img src="./img/bg-img/örnek-2.png" alt="Örnek tasarım"
+                                        data-animation="slideInRight" data-delay="400ms">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** About Us Area Start ***** -->
+    <section class="uza-about-us-area">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- About Thumbnail -->
+                <div class="col-12 col-md-6">
+                    <div class="about-us-thumbnail mb-80">
+                        <img src="./img/bg-img/örnek-3.png" alt="Fabrika İçi">
+                    </div>
+                </div>
+
+                <!-- About Us Content -->
+                <div class="col-12 col-md-6">
+                    <div class="about-us-content mb-80">
+                        <h2>10+ Yıllık Tabela & Grafik Tasarım Tecrübesi</h2>
+                        <p>KOU REKLAM olarak, tabelacılık sektöründe uzun yıllara dayanan deneyimimizle müşterilerimize
+                            en kaliteli hizmeti sunuyoruz. Işıklı ve ışıksız tabelalardan kutu harf sistemlerine, CNC
+                            kesimden özel tasarım çözümlerine kadar geniş bir yelpazede hizmet veriyoruz.</p>
+                        <p>Profesyonel grafik tasarım ekibimizle, markanızı en iyi şekilde yansıtan logo, kurumsal
+                            kimlik ve dijital tasarımlar hazırlıyoruz. Teknolojiyi yakından takip ederek, yenilikçi
+                            çözümlerle işletmenizin görünürlüğünü artırıyoruz.</p>
+                        <a href="about.html" class="btn uza-btn btn-2 mt-4">Detaylı Bilgi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Background Pattern -->
+        <div class="about-bg-pattern">
+            <img src="./img/core-img/curve-2.png" alt="">
+        </div>
+    </section>
+    <!-- ***** About Us Area End ***** -->
+
+    <!-- ***** Hizmetler Slider Area Start ***** -->
+    <!-- ***** Hizmetler Slider Area Start ***** -->
+    <section class="hizmetler-slayt-konteyner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hizmetler-baslik-alani">
+                        <h2 class="hizmetler-ana-baslik">HİZMETLERİMİZ</h2>
+                        <p class="hizmetler-alt-baslik">Profesyonel tabela ve grafik tasarım çözümleri</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hizmetler Slider -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper hizmetler-slayt">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 - Işıklı Tabela -->
+                            <div class="swiper-slide hizmet-kart-slide" data-link="isikli-tabela.html">
+                                <div class="service-card">
+                                    <img src="./img/hizmet/ışıklıtabela.jpg" alt="Işıklı Tabela"
+                                        class="hizmet-kart-ikon">
+                                    <h5 class="hizmet-kart-baslik">Işıklı Tabela</h5>
+                                    <p class="hizmet-kart-aciklama">Gece görünürlüğü yüksek, enerji tasarruflu ışıklı
+                                        tabela çözümleri.</p>
+                                    <button class="hizmet-detay-buton">Detaylı İncele</button>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 - Işıksız Tabela -->
+                            <div class="swiper-slide hizmet-kart-slide" data-link="isiksiz-tabela.html">
+                                <div class="service-card">
+                                    <img src="./img/hizmet/ışıksıztabela.png" alt="Işıksız Tabela"
+                                        class="hizmet-kart-ikon">
+                                    <h5 class="hizmet-kart-baslik">Işıksız Tabela</h5>
+                                    <p class="hizmet-kart-aciklama">Gündüz kullanım için şık ve dayanıklı tabelalar.</p>
+                                    <button class="hizmet-detay-buton">Detaylı İncele</button>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 - Kutu Harf -->
+                            <div class="swiper-slide hizmet-kart-slide" data-link="kutu-harf-tabela.html">
+                                <div class="service-card">
+                                    <img src="./img/hizmet/kutuharf.jpg" alt="Kutu Harf Tabela"
+                                        class="hizmet-kart-ikon">
+                                    <h5 class="hizmet-kart-baslik">Kutu Harf Tabela</h5>
+                                    <p class="hizmet-kart-aciklama">3D efektli, modern kutu harf tabela sistemleri.</p>
+                                    <button class="hizmet-detay-buton">Detaylı İncele</button>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 - Totem Tabela -->
+                            <div class="swiper-slide hizmet-kart-slide" data-link="totem-tabela.html">
+                                <div class="service-card">
+                                    <img src="./img/hizmet/totem-tabela.jpg" alt="Totem Tabela"
+                                        class="hizmet-kart-ikon">
+                                    <h5 class="hizmet-kart-baslik">Totem Tabela</h5>
+                                    <p class="hizmet-kart-aciklama">Yönlendirme ve bilgilendirme totemleri.</p>
+                                    <button class="hizmet-detay-buton">Detaylı İncele</button>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5 - CNC Kesim -->
+                            <div class="swiper-slide hizmet-kart-slide" data-link="cnc-kesim.html">
+                                <div class="service-card">
+                                    <img src="./img/hizmet/cnc-kesim.jpeg" alt="CNC Kesim" class="hizmet-kart-ikon">
+                                    <h5 class="hizmet-kart-baslik">CNC Router Kesim</h5>
+                                    <p class="hizmet-kart-aciklama">Hassas CNC kesim ile her türlü şekil ve yazı.</p>
+                                    <button class="hizmet-detay-buton">Detaylı İncele</button>
+                                </div>
+                            </div>
+
+                            <!-- Slide 6 - Grafik Tasarım -->
+                            <div class="swiper-slide hizmet-kart-slide" data-link="grafik-tasarim.html">
+                                <div class="service-card">
+                                    <img src="./img/hizmet/arac-giydirme.jpg" alt="Grafik Tasarım"
+                                        class="hizmet-kart-ikon">
+                                    <h5 class="hizmet-kart-baslik">Araç giydirme</h5>
+                                    <p class="hizmet-kart-aciklama">Araç giydirme Hizmetleri</p>
+                                    <button class="hizmet-detay-buton">Detaylı İncele</button>
+                                </div>
+                            </div>
+
+                            <!-- Slide 7 - Kurumsal Kimlik -->
+                            <div class="swiper-slide hizmet-kart-slide" data-link="kurumsal-kimlik.html">
+                                <div class="service-card">
+                                    <img src="./img/hizmet/dijital-baskı.jpg" alt="Kurumsal Kimlik"
+                                        class="hizmet-kart-ikon">
+                                    <h5 class="hizmet-kart-baslik">Dijital</h5>
+                                    <p class="hizmet-kart-aciklama">Kartvizit, antetli kağıt, zarf, dijital materyal
+                                        tasarımları.</p>
+                                    <button class="hizmet-detay-buton">Detaylı İncele</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next hizmetler-sonraki-buton"></div>
+                        <div class="swiper-button-prev hizmetler-onceki-buton"></div>
+                        <!-- Pagination dots -->
+                        <div class="swiper-pagination hizmetler-noktalar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Hizmetler Slider Area End ***** -->
+    <!-- ***** Hizmetler Slider Area End ***** -->
+
+    <!-- ***** Referanslar Area Start ***** -->
+
+    <section class="uza-portfolio-area section-padding-80">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <h3>Bizimle çalışan kurumsal markalar</h3>
+            </div>
+
+            <div class="swiper referansSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/akbulutvinc.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/arçelik.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/beko.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/copycenter.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/dominos.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/faber.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/gebzebelediye.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="referans-kart"><img src="./img/referans/gebzecenter.jpg"></div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="istatistik-grafik-alani section-padding-80">
+        <div class="container">
+
+            <!-- Başlık -->
+            <div class="section-heading text-center">
+                <h2>SAYILARLA KOU REKLAM</h2>
+                <p>Deneyimimiz ve işlerimiz hakkında kısa bilgiler</p>
+            </div>
+
+            <div class="text-center mt-4 mt-2">
+                <a href="istatistikler.html" class="btn btn-primary btn-lg">
+                    <i class="fa fa-chart-bar"></i> TÜM İSTATİSTİKLERİ GÖR
+                </a>
+            </div>
+
+            <!-- İstatistikler -->
+            <div class="istatistik-grid mt-4">
+                <div class="istatistik-kutu" tabindex="0">
+                    <div class="ikon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    <div class="icerik">
+                        <div class="sayi" data-target="10">0</div>
+                        <div class="aciklama">Yıl Tecrübe</div>
+                    </div>
+                </div>
+
+                <div class="istatistik-kutu" tabindex="0">
+                    <div class="ikon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                    <div class="icerik">
+                        <div class="sayi" data-target="500">0</div>
+                        <div class="aciklama">Tamamlanan Proje</div>
+                    </div>
+                </div>
+
+                <div class="istatistik-kutu" tabindex="0">
+                    <div class="ikon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <div class="icerik">
+                        <div class="sayi" data-target="200">0</div>
+                        <div class="aciklama">Kurumsal Müşteri</div>
+                    </div>
+                </div>
+
+                <div class="istatistik-kutu" tabindex="0">
+                    <div class="ikon"><i class="fa fa-th-large" aria-hidden="true"></i></div>
+                    <div class="icerik">
+                        <div class="sayi" data-target="20">0</div>
+                        <div class="aciklama">Hizmet Kategorisi</div>
+                    </div>
+                </div>
+
+                <div class="istatistik-kutu" tabindex="0">
+                    <div class="ikon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="icerik">
+                        <div class="sayi" data-target="15">0</div>
+                        <div class="aciklama">Şehirde Hizmet</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grafik -->
+            <div class="section-heading text-center mt-5">
+                <p>Son 5 yılda gerçekleştirdiğimiz projeler</p>
+            </div>
+
+
+
+            <canvas id="projelerChart" style="max-width: 700px; margin: 0 auto;"></canvas>
+
+        </div>
+    </section>
+
+    <!-- ***** Referanslar Area End ***** -->
+
+    <!-- ***** Duyurular Area Start ***** -->
+    <section class="uza-blog-area">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>SON DUYURULAR</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kartlar -->
+            <div class="row">
+                <!-- Duyuru 1 -->
+                <div class="col-12 col-md-3">
+                    <div class="duyuru-card">
+                        <div class="duyuru-tarih">15 Mart 2024</div>
+                        <h5>Yaz Sezonu Kampanyası</h5>
+                        <p>Haziran ayına özel tabela ve grafik tasarım hizmetlerinde %15 indirim fırsatı.</p>
+                        <a href="kampanyalar.html" class="btn uza-btn btn-2">Detaylı Bilgi</a>
+                    </div>
+                </div>
+
+                <!-- Duyuru 2 -->
+                <div class="col-12 col-md-3">
+                    <div class="duyuru-card">
+                        <div class="duyuru-tarih">10 Mart 2024</div>
+                        <h5>Yeni CNC Makinemiz</h5>
+                        <p>Daha hassas kesim için yeni CNC router makinemiz hizmetinizde.</p>
+                        <a href="duyurular.html" class="btn uza-btn btn-2">Detaylı Bilgi</a>
+                    </div>
+                </div>
+
+                <!-- Duyuru 3 -->
+                <div class="col-12 col-md-3">
+                    <div class="duyuru-card">
+                        <div class="duyuru-tarih">5 Mart 2024</div>
+                        <h5>Grafik Tasarım Ekibimiz</h5>
+                        <p>Grafik tasarım ekibimizi güçlendirdik, yeni projeler için hazırız.</p>
+                        <a href="duyurular.html" class="btn uza-btn btn-2">Detaylı Bilgi</a>
+                    </div>
+                </div>
+                <!-- Tüm duyuruları görüntüle -->
+                <div class="col-12 col-md-3 d-flex align-items-end justify-content-center">
+                    <div class="duyuru-card">
+                        <a href="duyurular.html" style="font-weight:600; color:#ff084e; text-decoration:underline;">
+                            Tüm duyuruları görüntüle →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area section-padding-80-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">İletişim</h4>
+
+                        <!-- Footer Content -->
+                        <div class="footer-content mb-15">
+                            <h5>90 555 189 81 82</h5>
+                            <p>Gebze Center AVM, Tatlıkuyu, No:310, 41400 <br> Gebze /
+                                Kocaeli<br>info@renklamtabela.com
+                            </p>
+                        </div>
+                        <p class="mb-0">Pazartesi - Cumartesi: 09:00 - 19:00<br>
+                            Pazar: Kapalı</p>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Hızlı Menü</h4>
+
+                        <!-- Nav -->
+                        <nav>
+                            <ul class="our-link">
+                                <li><a href="index.html">Ana Sayfa</a></li>
+                                <li><a href="about.html">Hakkımızda</a></li>
+                                <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+                                <li><a href="referanslar.html">Referanslar</a></li>
+                                <li><a href="contact.html">İletişim</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Hizmetlerimiz</h4>
+
+                        <!-- Nav -->
+                        <nav>
+                            <ul class="our-link">
+                                <li><a href="isikli-tabela.html">Işıklı Tabela</a></li>
+                                <li><a href="kutu-harf-tabela.html">Kutu Harf</a></li>
+                                <li><a href="cnc-kesim.html">CNC Kesim</a></li>
+                                <li><a href="dijital-baskı.html">Dijital Baskı</a></li>
+                                <li><a href="tabela-hizmetleri.html">Tüm Hizmetler</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">KOU REKLAM</h4>
+                        <p>Profesyonel tabela ve grafik tasarım hizmetleri ile sektörde 10+ yıllık deneyim.
+                        </p>
+
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text mb-30">
+                            <p>&copy; 2024 <strong>KOU REKLAM</strong>. Tüm hakları saklıdır.</p>
+                        </div>
+
+                        <!-- Social Info -->
+                        <div class="footer-social-info">
+                            <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://wa.me/905551898182" class="WhatsApp" data-toggle="top" data-placement="top"
+                                title="WhatsApp" target="_blank">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-12 text-center">
+                    <p>KOU REKLAM - Profesyonel Tabela ve Grafik Tasarım Hizmetleri</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS Files ******* -->
+    <!-- jQuery js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- All js -->
+    <script src="js/uza.bundle.js"></script>
+    <!-- Active js -->
+    <script src="js/default-assets/active.js"></script>
+
+    <script>
+        var swiper = new Swiper(".referansSwiper", {
+            slidesPerView: 4,
+            slidesPerGroup: 1,     // ← İSTEDİĞİN BU!
+            spaceBetween: 25,
+            loop: false,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: { slidesPerView: 1, slidesPerGroup: 1 },
+                576: { slidesPerView: 2, slidesPerGroup: 1 },
+                768: { slidesPerView: 3, slidesPerGroup: 1 },
+                992: { slidesPerView: 4, slidesPerGroup: 1 },
+            }
+        });
+    </script>
+
+    <!-- grafik !-->
+    <script>
+        var ctx = document.getElementById('projelerChart').getContext('2d');
+
+        var projelerChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2021', '2021', '2022', '2023', '2025'],
+                datasets: [{
+                    label: 'Tamamlanan Proje Sayısı',
+                    data: [85, 120, 180, 240, 310],
+                    borderColor: '#ff084e',
+                    borderWidth: 3,
+                    fill: false,
+                    tension: 0.3,
+                    pointRadius: 5,
+                    pointBackgroundColor: '#ff084e'
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        ticks: { stepSize: 50 }
+                    }
+                }
+            }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.istatistik-kutu .sayi');
+            const options = { threshold: 0.5 };
+
+            const animateCount = (el, target) => {
+                const duration = 1400;
+                const start = 0;
+                const end = parseInt(target, 10);
+                let startTime = null;
+
+                const step = (timestamp) => {
+                    if (!startTime) startTime = timestamp;
+                    const progress = Math.min((timestamp - startTime) / duration, 1);
+                    const eased = Math.ceil(progress * end);
+                    el.textContent = eased;
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        el.textContent = end;
+                    }
+                };
+                window.requestAnimationFrame(step);
+            };
+
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target.querySelector('.sayi');
+                        if (!el.dataset.started) {
+                            el.dataset.started = 'true';
+                            animateCount(el, el.getAttribute('data-target'));
+                        }
+                    }
+                });
+            }, options);
+
+            document.querySelectorAll('.istatistik-kutu').forEach(kutu => io.observe(kutu));
+        });
+    </script>
+    <!-- Swiper Slider JS -->
+    <script>
+        var hizmetlerSlider = new Swiper(".hizmetler-slayt", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".hizmetler-sonraki-buton",
+                prevEl: ".hizmetler-onceki-buton",
+            },
+            pagination: {
+                el: ".hizmetler-noktalar",
+                clickable: true,
+                bulletClass: 'hizmetler-nokta',
+                bulletActiveClass: 'hizmetler-nokta-aktif'
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+
+        document.querySelectorAll('.hizmet-kart-slide').forEach(slide => {
+            slide.addEventListener('click', function () {
+                window.location.href = this.getAttribute('data-link');
+            });
+        });
+
+        document.querySelectorAll('.hizmet-detay-buton').forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var slide = this.closest('.hizmet-kart-slide');
+                if (slide) {
+                    window.location.href = slide.getAttribute('data-link');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
