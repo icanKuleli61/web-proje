@@ -95,7 +95,6 @@
         </div>
     </header>
 
-    <!-- Sayfa Başlık -->
     <section class="sayfa-baslik">
         <div class="sayfa-baslik-icerik">
             <h1>Kampanyalar</h1>
@@ -103,14 +102,11 @@
         </div>
     </section>
 
-    <!-- Kampanya Bölümü -->
     <section class="section-padding-80">
         <div class="duyurular-container">
 
 
-            <!-- Kampanya Listesi -->
             <div class="duyuru-listesi">
-                <!-- Kampanya 1 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal1">
                     <div class="duyuru-tarih">
                         <span class="date-range">01 Aralık 2025 00:00 - 20 Aralık 2025 00:00</span>
@@ -120,7 +116,6 @@
                     <a class="duyuru-detay-btn">Devamını Oku →</a>
                 </div>
 
-                <!-- DUYURU 2 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal2">
                     <div class="duyuru-tarih">
                         <span class="date-range">10 Mayıs 2025 00:00 - 10 Haziran 2025 00:00</span>
@@ -130,7 +125,6 @@
                     <a class="duyuru-detay-btn">Devamını Oku →</a>
                 </div>
 
-                <!-- DUYURU 3 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal3">
                     <div class="duyuru-tarih">
                         <span class="date-range">01 Nisan 2025 00:00 - 2 Haziran 2025 00:00</span>
@@ -141,7 +135,6 @@
                     <a class="duyuru-detay-btn">Devamını Oku →</a>
                 </div>
 
-                <!-- DUYURU 4 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal4">
                     <div class="duyuru-tarih">
                         <span class="date-range">10 Mart 2025 00:00 - 10 Mayıs 2025 00:00</span>
@@ -154,9 +147,7 @@
         </div>
     </section>
 
-    <!-- MODALLAR -->
 
-    <!-- Modal 1 -->
     <div class="modal fade" id="duyuruModal1" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -180,7 +171,6 @@
     </div>
 
 
-    <!-- Modal 2 -->
     <div class="modal fade" id="duyuruModal2" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -204,7 +194,6 @@
     </div>
 
 
-    <!-- Modal 3 -->
     <div class="modal fade" id="duyuruModal3" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -250,6 +239,7 @@
             </div>
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="footer-area section-padding-80-0">
         <div class="container">
@@ -354,19 +344,15 @@
         </div>
     </footer>
 
-    <!-- JS Dosyaları -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/uza.bundle.js"></script>
     <script src="js/default-assets/active.js"></script>
 
-    <!-- Filtreleme JS -->
     <script>
-        // Filtreleme fonksiyonu
         document.querySelectorAll('.filtre-btn').forEach(button => {
             button.addEventListener('click', function () {
-                // Aktif butonu değiştir
                 document.querySelectorAll('.filtre-btn').forEach(btn => {
                     btn.classList.remove('active');
                 });
@@ -385,7 +371,6 @@
             });
         });
 
-        // Enter tuşu ile modal açma
         document.querySelectorAll('.duyuru-item').forEach(item => {
             item.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') {

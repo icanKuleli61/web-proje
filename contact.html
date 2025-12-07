@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <!-- ***** Top Search Area Start ***** -->
+    <!--  Top Search Area Start  -->
     <div class="top-search-area">
         <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -35,9 +35,9 @@
             </div>
         </div>
     </div>
-    <!-- ***** Top Search Area End ***** -->
+    <!--  Top Search Area End  -->
 
-    <!-- ***** Header Area Start ***** -->
+    <!--  Header Area Start  -->
     <header class="header-area">
         <div class="main-header-area">
             <div class="classy-nav-container breakpoint-off">
@@ -107,9 +107,8 @@
             </div>
         </div>
     </header>
-    <!-- ***** Header Area End ***** -->
+    <!--  Header Area End  -->
 
-    <!-- Sayfa Başlık -->
     <section class="sayfa-baslik">
         <div class="sayfa-baslik-icerik">
             <h1>İletişim</h1>
@@ -117,11 +116,10 @@
         </div>
     </section>
 
-    <!-- ***** Contact Area Start ***** -->
+    <!--  Contact Area Start  -->
     <section class="uza-contact-area section-padding-80">
         <div class="container">
 
-            <!-- --------------- 1. FORM --------------- -->
             <div class="row justify-content-between mb-5">
                 <div class="col-12 col-lg-8">
                     <div class="uza-contact-form mb-80">
@@ -231,7 +229,6 @@
         <img src="./img/core-img/curve-5.png" alt="">
     </div>
 
-    <!-- ***** Newsletter Area Start ***** -->
     <section class="uza-newsletter-area">
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -256,7 +253,6 @@
 
         </div>
     </section>
-    <!-- ***** Newsletter Area End ***** -->
 
     <!-- ----- Form Gönderildi Modal ----- -->
     <div class="modal fade" id="formGonderildiModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -276,7 +272,6 @@
         </div>
     </div>
 
-    <!-- ----- Abonelik Modal ----- -->
     <div class="modal fade" id="abonelikModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -299,7 +294,6 @@
         <div class="container">
             <div class="row justify-content-between">
 
-                <!-- Footer Widget 1 -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget mb-80">
                         <h4 class="widget-title">İletişim</h4>
@@ -311,7 +305,6 @@
                     </div>
                 </div>
 
-                <!-- Footer Widget 2 -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget mb-80">
                         <h4 class="widget-title">Hızlı Menü</h4>
@@ -327,7 +320,6 @@
                     </div>
                 </div>
 
-                <!-- Footer Widget 3 -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget mb-80">
                         <h4 class="widget-title">Hizmetlerimiz</h4>
@@ -343,7 +335,6 @@
                     </div>
                 </div>
 
-                <!-- Footer Widget 4 -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget mb-80">
                         <h4 class="widget-title">KOU REKLAM</h4>
@@ -373,7 +364,7 @@
 
         </div>
     </footer>
-    <!-- ***** Footer Area End ***** -->
+    <!--  Footer Area End  -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -415,7 +406,7 @@
         var form = document.getElementById('sikayetForm');
 
         if (form.checkValidity()) {
-            $('#formGonderildiModal').modal('show'); // Aynı modalı kullanıyor
+            $('#formGonderildiModal').modal('show');
             form.reset();
         } else {
             form.reportValidity();

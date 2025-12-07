@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <!-- Header (Senin header'ın aynı) -->
+    <!-- Header  -->
     <header class="header-area">
         <div class="main-header-area">
             <div class="classy-nav-container breakpoint-off">
@@ -103,14 +103,11 @@
         </div>
     </section>
 
-    <!-- Duyurular Bölümü -->
     <section class="section-padding-80">
         <div class="duyurular-container">
 
 
-            <!-- Duyuru Listesi -->
             <div class="duyuru-listesi">
-                <!-- DUYURU 1 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal1">
                     <div class="duyuru-tarih">
                         <span class="date-range">27 EKİM 2025 00:00 - 15 KASIM 2025 00:00</span>
@@ -121,7 +118,6 @@
                     <a class="duyuru-detay-btn">Devamını Oku →</a>
                 </div>
 
-                <!-- DUYURU 2 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal2">
                     <div class="duyuru-tarih">
                         <span class="date-range">21 EKİM 2025 00:00 - 21 EKİM 2025 00:00</span>
@@ -133,7 +129,6 @@
                     <a class="duyuru-detay-btn">Devamını Oku →</a>
                 </div>
 
-                <!-- DUYURU 3 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal3">
                     <div class="duyuru-tarih">
                         <span class="date-range">13 EKİM 2025 00:00 - 23 EKİM 2025 00:00</span>
@@ -144,7 +139,6 @@
                     <a class="duyuru-detay-btn">Devamını Oku →</a>
                 </div>
 
-                <!-- DUYURU 4 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal4">
                     <div class="duyuru-tarih">
                         <span class="date-range">5 EYLÜL 2025 00:00 - 10 EYLÜL 2025 00:00</span>
@@ -154,7 +148,6 @@
                     <a class="duyuru-detay-btn">Devamını Oku →</a>
                 </div>
 
-                <!-- DUYURU 5 -->
                 <div class="duyuru-item" data-toggle="modal" data-target="#duyuruModal5">
                     <div class="duyuru-tarih">
                         <span class="date-range">1 EYLÜL 2025 00:00 - 27 EKİM 2025 00:00</span>
@@ -167,9 +160,7 @@
         </div>
     </section>
 
-    <!-- MODALLAR -->
 
-    <!-- Modal 1 -->
     <div class="modal fade" id="duyuruModal1" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -195,7 +186,6 @@
         </div>
     </div>
 
-    <!-- Modal 2 -->
     <div class="modal fade" id="duyuruModal2" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -216,7 +206,6 @@
         </div>
     </div>
 
-    <!-- Modal 3 -->
     <div class="modal fade" id="duyuruModal3" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -391,19 +380,15 @@
         </div>
     </footer>
 
-    <!-- JS Dosyaları -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/uza.bundle.js"></script>
     <script src="js/default-assets/active.js"></script>
 
-    <!-- Filtreleme JS -->
     <script>
-        // Filtreleme fonksiyonu
         document.querySelectorAll('.filtre-btn').forEach(button => {
             button.addEventListener('click', function () {
-                // Aktif butonu değiştir
                 document.querySelectorAll('.filtre-btn').forEach(btn => {
                     btn.classList.remove('active');
                 });
@@ -422,7 +407,6 @@
             });
         });
 
-        // Enter tuşu ile modal açma
         document.querySelectorAll('.duyuru-item').forEach(item => {
             item.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') {
