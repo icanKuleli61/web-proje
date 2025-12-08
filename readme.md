@@ -1,6 +1,25 @@
 # Renklam Tabela Web Sitesi
 
-Bu proje, bir reklam ve tabela hizmetleri sunan firma için hazırlanmış modern ve mobil uyumlu bir tanıtım sitesidir. Proje HTML, CSS ve JavaScript kullanılarak geliştirilmiş olup, kullanıcı dostu ve görsel olarak çekici bir arayüz sunmaktadır.
+Bu proje, bir reklam ve tabela hizmetleri sunan firma için hazırlanmış modern ve mobil uyumlu bir tanıtım sitesidir. Proje HTML, CSS ve JavaScript kullanılarak geliştirilmiş olup, kullanıcı dostu ve görsel olarak çekici bir arayüz sunmaktadır. Bu site tamamen frontend odaklıdır ve herhangi bir backend entegrasyonu içermez.
+
+## Projeyi Oluşturma Süreci
+
+Öncelikle modern ve responsive bir site oluşturmak istedim.
+
+Kullanıcı deneyimi ve görsellik benim için önemliydi.
+
+Mevcut ücretsiz şablonları araştırdım ve Uza - Creative Agency Template
+ şablonunu seçtim.
+
+## Seçerken dikkat ettiğim noktalar:
+
+Mobil uyumlu ve responsive olması
+
+Temiz ve anlaşılır bir menü yapısı
+
+Slider ve modal gibi interaktif öğeler
+
+Kolayca özelleştirilebilir HTML, CSS ve JS yapısı
 
 ## Öne Çıkan Özellikler
 
